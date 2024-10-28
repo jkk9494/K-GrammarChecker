@@ -35,7 +35,7 @@ public class GrammarService {
         requestBody.put("model", "gpt-4o-mini");
         requestBody.put("messages", List.of(Map.of(
                 "role", "user",
-                "content", request.getText() + "\n\n이 텍스트의 맞춤법과 문법을 검사하고 제안하세요."
+                "content", request.getText() + "\n\n이 텍스트의 맞춤법과 문법을 검사하고 제안하세요. 결과텍스트만 보여주세요."
         )));
         requestBody.put("max_tokens", 100);
         requestBody.put("temperature", 0.5);
